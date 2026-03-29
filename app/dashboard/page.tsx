@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 import { useUser, UserButton } from '@clerk/nextjs'
-import { C, BROAD_CURRICULA_META, TEACHER_SUBJECTS } from '../onboarding/constants'
+import { BROAD_CURRICULA_META, TEACHER_SUBJECTS } from '../onboarding/constants'
 
 const TAGLINES: Record<string, Record<string, string>> = {
   'Year 7': {
@@ -67,52 +67,52 @@ export default function DashboardPage() {
   const headline = role === 'student' ? `Heads up, ${name}!` : `Welcome, ${name}!`
 
   return (
-    <div style={{ minHeight: '100vh', fontFamily: "'Sora',sans-serif", background: C.pageBg, color: C.black }}>
+    <div className="min-h-screen bg-page-bg text-dark">
       {/* Header */}
-      <header style={{ padding: '18px 32px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderBottom: `1px solid ${C.bone}` }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <span style={{ fontSize: 15, fontWeight: 700, color: C.dark }}><span>Revise</span><span style={{ color: C.orange }}>Mate</span></span>
+      <header className="flex items-center justify-between px-8 py-[18px] border-b border-bone">
+        <div className="flex items-center gap-2.5">
+          <span className="text-[15px] font-bold text-dark">Revise<span className="text-cord">Mate</span></span>
         </div>
         <UserButton />
       </header>
 
       {/* Welcome Modal */}
       {showModal && (
-        <div style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.4)', zIndex: 999, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 24 }}>
-          <div className="fi" style={{ maxWidth: 440, width: '100%', background: C.white, borderRadius: 20, padding: '36px 32px', textAlign: 'center', boxShadow: '0 24px 80px rgba(0,0,0,0.15)' }}>
-            <div style={{ fontSize: 48, marginBottom: 16 }}>🚀</div>
-            <h2 style={{ fontSize: 24, fontWeight: 400, letterSpacing: '-0.5px', color: C.dark, marginBottom: 8 }}>
+        <div className="fixed inset-0 bg-black/40 z-[999] flex items-center justify-center p-6">
+          <div className="fi max-w-[440px] w-full bg-white rounded-[20px] px-8 py-9 text-center shadow-[0_24px_80px_rgba(0,0,0,0.15)]">
+            <div className="text-5xl mb-4">🚀</div>
+            <h2 className="text-2xl font-normal tracking-[-0.5px] text-dark mb-2">
               {headline}
             </h2>
-            <p style={{ fontSize: 15, color: C.gray, lineHeight: 1.6, marginBottom: 24 }}>{tagline}</p>
+            <p className="text-[15px] text-gray-rm leading-[1.6] mb-6">{tagline}</p>
 
             {/* Role-specific content */}
             {role === 'teacher' && (
-              <div style={{ marginBottom: 20 }}>
+              <div className="mb-5">
                 {teachSubjects.length > 0 && (
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, justifyContent: 'center', marginBottom: 12 }}>
+                  <div className="flex flex-wrap gap-2 justify-center mb-3">
                     {teachSubjects.map(id => {
                       const s = TEACHER_SUBJECTS.find(x => x.id === id)
-                      return s ? <span key={id} style={{ padding: '6px 14px', borderRadius: 10, background: C.tealSoft, fontSize: 13, fontWeight: 600, color: C.teal }}>{s.emoji} {s.label}</span> : null
+                      return s ? <span key={id} className="px-3.5 py-1.5 rounded-[10px] bg-teal-soft text-[13px] font-semibold text-teal">{s.emoji} {s.label}</span> : null
                     })}
                   </div>
                 )}
                 {yearGroups.length > 0 && (
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, justifyContent: 'center' }}>
-                    {yearGroups.map(y => <span key={y} style={{ padding: '4px 10px', borderRadius: 8, background: C.grayFaint, fontSize: 12, fontWeight: 500, color: C.dark }}>{y}</span>)}
+                  <div className="flex flex-wrap gap-1.5 justify-center">
+                    {yearGroups.map(y => <span key={y} className="px-2.5 py-1 rounded-lg bg-gray-faint text-xs font-medium text-dark">{y}</span>)}
                   </div>
                 )}
               </div>
             )}
 
             {role === 'parent' && (
-              <div style={{ marginBottom: 20 }}>
-                <p style={{ fontSize: 13, color: C.gray, marginBottom: 8 }}>Supporting <strong>{childName || 'your child'}</strong> {year ? `in ${year}` : ''}</p>
+              <div className="mb-5">
+                <p className="text-[13px] text-gray-rm mb-2">Supporting <strong>{childName || 'your child'}</strong> {year ? `in ${year}` : ''}</p>
                 {parentSubjects.length > 0 && (
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, justifyContent: 'center' }}>
+                  <div className="flex flex-wrap gap-2 justify-center">
                     {parentSubjects.map(id => {
                       const s = TEACHER_SUBJECTS.find(x => x.id === id)
-                      return s ? <span key={id} style={{ padding: '6px 14px', borderRadius: 10, background: C.tealSoft, fontSize: 13, fontWeight: 600, color: C.teal }}>{s.emoji} {s.label}</span> : null
+                      return s ? <span key={id} className="px-3.5 py-1.5 rounded-[10px] bg-teal-soft text-[13px] font-semibold text-teal">{s.emoji} {s.label}</span> : null
                     })}
                   </div>
                 )}
@@ -120,41 +120,39 @@ export default function DashboardPage() {
             )}
 
             {role === 'student' && (
-              <div style={{ marginBottom: 20 }}>
-                <p style={{ fontSize: 12, color: C.grayMid }}>{year} · {currLabel}</p>
+              <div className="mb-5">
+                <p className="text-xs text-gray-mid">{year} · {currLabel}</p>
               </div>
             )}
 
-            <button onClick={() => setShowModal(false)} style={{
-              padding: '14px 40px', borderRadius: 14, background: C.cord, color: C.white,
-              fontSize: 15, fontWeight: 600, letterSpacing: '-0.2px', border: 'none', cursor: 'pointer',
-              boxShadow: `0 4px 20px ${C.cord}30`,
-            }}>Let&apos;s go →</button>
+            <button onClick={() => setShowModal(false)} className="px-10 py-3.5 rounded-[14px] bg-cord text-white text-[15px] font-semibold tracking-[-0.2px] border-none cursor-pointer shadow-[0_4px_20px_#8C2F3930]">
+              Let&apos;s go →
+            </button>
           </div>
         </div>
       )}
 
       {/* Dashboard content */}
-      <div style={{ maxWidth: 800, margin: '0 auto', padding: '40px 32px' }}>
-        <h1 style={{ fontSize: 28, fontWeight: 400, letterSpacing: '-0.5px', color: C.dark, marginBottom: 8 }}>
+      <div className="max-w-[800px] mx-auto px-8 py-10">
+        <h1 className="text-[28px] font-normal tracking-[-0.5px] text-dark mb-2">
           Hey, <span className="italic-accent">{name}</span>
         </h1>
-        <p style={{ fontSize: 15, color: C.gray, marginBottom: 32 }}>
+        <p className="text-[15px] text-gray-rm mb-8">
           {role === 'student' && "Ready to revise? Pick a subject to get started."}
           {role === 'teacher' && "Welcome to your teaching dashboard."}
           {role === 'parent' && `Here's how ${childName || 'your child'} is doing.`}
         </p>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
-          <div className="card card-h" style={{ padding: 24 }}>
-            <div style={{ fontSize: 28, marginBottom: 12 }}>📐</div>
-            <h3 style={{ fontSize: 16, fontWeight: 700, color: C.dark, marginBottom: 6 }}>IGCSE Maths</h3>
-            <p style={{ fontSize: 13, color: C.gray }}>Edexcel 4MA1 — Start practising</p>
+        <div className="grid grid-cols-2 gap-4">
+          <div className="card card-h p-6">
+            <div className="text-[28px] mb-3">📐</div>
+            <h3 className="text-base font-bold text-dark mb-1.5">IGCSE Maths</h3>
+            <p className="text-[13px] text-gray-rm">Edexcel 4MA1 — Start practising</p>
           </div>
-          <div className="card card-h" style={{ padding: 24, opacity: 0.5 }}>
-            <div style={{ fontSize: 28, marginBottom: 12 }}>🧪</div>
-            <h3 style={{ fontSize: 16, fontWeight: 700, color: C.dark, marginBottom: 6 }}>More subjects</h3>
-            <p style={{ fontSize: 13, color: C.gray }}>Coming soon...</p>
+          <div className="card card-h p-6 opacity-50">
+            <div className="text-[28px] mb-3">🧪</div>
+            <h3 className="text-base font-bold text-dark mb-1.5">More subjects</h3>
+            <p className="text-[13px] text-gray-rm">Coming soon...</p>
           </div>
         </div>
       </div>
