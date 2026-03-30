@@ -24,10 +24,10 @@ export default function Navbar() {
                 </div>
                 <div className="flex items-center gap-2">
                     <Button variant="purple">
-                        <Link href="/login">Login</Link>
+                        <Link href="/sign-in">Sign in</Link>
                     </Button>
                     <Button className="hidden sm:inline-flex">
-                        <Link href="/register">Register</Link>
+                        <Link href="/sign-up">Sign up</Link>
                     </Button>
                 </div>
             </nav>

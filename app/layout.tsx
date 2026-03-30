@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const inter = localFont({
   src: [
@@ -33,12 +34,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn("h-full antialiased", inter.variable, instrumentSerif.variable)}>
-      <body className="min-h-full flex flex-col">
-
+    <ClerkProvider>
+      <html lang="en" className={cn("h-full antialiased", inter.variable, instrumentSerif.variable)}>
+        <body className="min-h-full flex flex-col">
           {children}
-        
-      </body>
-    </html>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

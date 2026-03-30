@@ -51,7 +51,7 @@ export default function Pricing() {
                   <span className="font-serif text-[2.5rem] text-white">$10</span>
                   <span className="text-white/60 text-sm ml-1">/month</span>
                 </p>
-                <button className="bg-transparent border border-white text-white text-sm font-medium px-6 py-2.5 rounded-md hover:bg-white/10 transition-colors">
+                <button className="bg-white border border-white  text-sm font-medium px-6 py-2.5 rounded-md hover:bg-white/10 transition-colors">
                   Upgrade to Plus
                 </button>
               </div>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import FeatureCard from "./featurecard";
+import FeatureCard from "@/components/Landing/featurecard";
 
 const features = [
   {
