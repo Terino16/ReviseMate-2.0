@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
-import Navbar from "@/components/Landing/navbar"
+import Navbar from "@/components/landing/navbar"
 
 export default function Hero() {
     return (
