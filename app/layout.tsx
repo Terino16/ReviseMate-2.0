@@ -26,6 +26,24 @@ const instrumentSerif = localFont({
 export const metadata: Metadata = {
   title: "ReviseMate",
   description: "Your revision companion",
+  openGraph: {
+    title: "ReviseMate",
+    description: "Your revision companion",
+    images: [
+      {
+        url: "/OG_image.png",
+        width: 1200,
+        height: 630,
+        alt: "ReviseMate — a learning platform designed for Students, Teachers, and Parents",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ReviseMate",
+    description: "Your revision companion",
+    images: ["/OG_image.png"],
+  },
 };
 
 export default function RootLayout({
