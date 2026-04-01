@@ -24,11 +24,14 @@ const instrumentSerif = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "ReviseMate",
-  description: "Your revision companion",
+  icons: {
+    icon: "/favicon.svg",
+  },
+  title: "ReviseMate — Exam Revision Platform for Students, Teachers & Parents",
+  description: "ReviseMate is a smart revision platform backed by experienced tutors and data-driven insights. Empowering students, teachers, and parents to achieve exam success together.",
   openGraph: {
-    title: "ReviseMate",
-    description: "Your revision companion",
+    title: "ReviseMate — Exam Revision Platform for Students, Teachers & Parents",
+    description: "ReviseMate is a smart revision platform backed by experienced tutors and data-driven insights. Empowering students, teachers, and parents to achieve exam success together.",
     images: [
       {
         url: "/OG_image.png",
@@ -40,8 +43,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ReviseMate",
-    description: "Your revision companion",
+    title: "ReviseMate — Exam Revision Platform for Students, Teachers & Parents",
+    description: "ReviseMate is a smart revision platform backed by experienced tutors and data-driven insights. Empowering students, teachers, and parents to achieve exam success together.",
     images: ["/OG_image.png"],
   },
 };

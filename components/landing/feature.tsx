@@ -60,7 +60,7 @@ export default function Feature() {
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 flex items-center justify-center h-full px-4 sm:px-6">
           <h2 className="font-serif text-white text-[1.5rem] sm:text-[2.5rem] md:text-[3.5rem] font-normal text-center leading-tight">
-            Data-backed revision programs designed by experts,
+            Data-backed revision programs designed by experts
             <br className="hidden sm:block" />
             that actually help you succeed.
           </h2>

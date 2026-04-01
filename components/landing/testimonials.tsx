@@ -4,7 +4,7 @@ const testimonials = [
   {
     name: "Sage Moreno",
     role: "Teacher",
-    image: "/testimonial/user1.jpg",
+    image: "/testimonial/user2.jpg",
     quote:
       "\"It gives me a much clearer view of how my students are progressing. I can quickly see where they're struggling and support them better.\"",
     nameColor: "bg-[#B22234] text-white",
@@ -13,7 +13,7 @@ const testimonials = [
   {
     name: "Julien Styles",
     role: "Student",
-    image: "/testimonial/user2.jpg",
+    image: "/testimonial/user1.jpg",
     quote:
       "\"It actually helps me understand what I'm doing, not just get the answer. I feel way more confident going into exams now.\"",
     nameColor: "bg-[#3B5068] text-white",

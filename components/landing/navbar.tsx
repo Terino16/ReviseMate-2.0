@@ -23,10 +23,10 @@ export default function Navbar() {
                     <Image src="/Logo.svg" alt="ReviseMate Logo" width={150} height={150} className="h-8 w-auto sm:h-full sm:w-full" />
                 </div>
                 <div className="flex items-center gap-2">
-                    <Button variant="purple" className="text-sm sm:text-base">
+                    <Button variant="purple" className="">
                         <Link href="/sign-in">Sign in</Link>
                     </Button>
-                    <Button className="hidden sm:inline-flex">
+                    <Button className="hidden  sm:inline-flex">
                         <Link href="/sign-up">Sign up</Link>
                     </Button>
                 </div>
