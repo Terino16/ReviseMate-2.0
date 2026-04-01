@@ -20,6 +20,7 @@
   --cord: #8C2F39;
   --cord-light: #A84050;
   --cord-soft: #FAEAEB;
+  --bodytext: #574143;
   --dark: #202833;
   --green: #004953;
   --green-acc: #1A6B5A;
@@ -72,6 +73,7 @@
   --color-gray-rm: var(--gray);
   --color-gray-light: var(--gray-light);
   --color-gray-faint: var(--gray-faint);
+  --color-bodytext: var(--bodytext);
   --color-cream: var(--cream);
   --color-green-soft: var(--green-soft);
   --font-heading: var(--font-sans);

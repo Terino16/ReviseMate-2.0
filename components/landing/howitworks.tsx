@@ -27,17 +27,17 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="hiw-section py-24">
-      <div className="max-w-[1100px] mx-auto px-6">
-        <h2 className="hiw-heading font-serif text-[3.5rem] font-normal text-center leading-tight mb-14">
+    <section className="hiw-section py-12 sm:py-24">
+      <div className="max-w-[1100px] mx-auto px-4 sm:px-6">
+        <h2 className="hiw-heading font-serif text-[2rem] sm:text-[2.8rem] md:text-[3.5rem] font-normal text-center leading-tight mb-8 sm:mb-14">
           How It Works
         </h2>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {steps.map((step, i) => (
             <div
               key={step.number}
-              className={`${step.bg} hiw-card relative rounded-2xl p-10 min-h-[280px] flex flex-col justify-end text-white`}
+              className={`${step.bg} hiw-card relative rounded-2xl p-8 sm:p-10 min-h-[230px] sm:min-h-[280px] flex flex-col justify-end text-white`}
               style={{ animationDelay: `${i * 0.1}s` }}
             >
               <span className="absolute top-2 left-3 text-white text-xl">+</span>
@@ -45,11 +45,11 @@ export default function HowItWorks() {
               <span className="absolute bottom-3 left-3 text-white text-xl">+</span>
               <span className="absolute bottom-3 right-3 text-white text-xl">+</span>
 
-              <span className="text-white/50 text-sm mb-3">{step.number}</span>
-              <h3 className="font-serif text-[1.7rem] font-normal mb-3">
+              <span className="text-white/50 text-sm mb-2 sm:mb-3">{step.number}</span>
+              <h3 className="font-serif text-[1.3rem] sm:text-[1.7rem] font-normal mb-2 sm:mb-3">
                 {step.title}
               </h3>
-              <p className="text-[0.9rem] leading-relaxed text-white/75 max-w-[420px]">
+              <p className="text-[0.85rem] sm:text-[0.9rem] leading-relaxed text-white/75 max-w-[420px]">
                 {step.body}
               </p>
             </div>

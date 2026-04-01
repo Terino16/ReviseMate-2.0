@@ -1,0 +1,11 @@
+export default function QuizLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-[#F2EDEC]">
+      {children}
+    </div>
+  )
+}

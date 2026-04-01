@@ -1,0 +1,812 @@
+{
+  "id": "ED_Igcse_Math_A_Q1",
+  "officialQuestion": "Last season, the number of goals scored by Arjun, Simon, and Kath for their football team were in the ratios 2 : 5 : 8. Simon scored 12 more goals than Arjun. Work out the number of goals scored by Kath.",
+  "tags": [
+    "10 marks",
+    "easy",
+    "25-30 mins",
+    "Date of Exam: May 2022"
+  ],
+  "pathways": [
+    "algebra",
+    "numeric"
+  ],
+  "allPath": "False",
+  "flow": [
+    "C1",
+    "C2",
+    "PQ",
+    "C3",
+    "C4",
+    "C5",
+    "C6"
+  ],
+  "totalMarks": "3",
+  "commonQuestions": [
+    {
+      "id": "C1",
+      "screen": "planning",
+      "text": "What key information do we need to extract from this problem?",
+      "marks": "0",
+      "lo": [
+        "LO-F-1.7A",
+        "LO-F-1.7E"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "The ratio of goals scored by Arjun, Simon, and Kath is 2 : 5 : 8, and Simon scored 12 more goals than Arjun. ",
+          "path": ""
+        },
+        {
+          "id": "B",
+          "text": "The ratio of goals scored by Arjun, Simon, and Kath is 2 : 5 : 8, and Simon scored 12 goals in total.",
+          "path": ""
+        },
+        {
+          "id": "C",
+          "text": " Arjun, Simon, and Kath scored a total of 12 goals in the ratio 2 : 5 : 8. ",
+          "path": ""
+        },
+        {
+          "id": "D",
+          "text": " Arjun and Simon together scored 12 more goals than Kath in the ratio 2 : 5 : 8. ",
+          "path": ""
+        }
+      ],
+      "correctAnswer": [
+        "A"
+      ],
+      "feedback": [
+        {
+          "id": "A",
+          "text": "Excellent! We need to use both pieces of information: the ratio 2 : 5 : 8 and the fact that Simon scored 12 more goals than Arjun."
+        },
+        {
+          "id": "B",
+          "text": "Read the problem statement carefully. Does it say Simon scored 12 goals in total, or is there a different relationship involving the number 12?"
+        },
+        {
+          "id": "C",
+          "text": "Look at the second piece of information again. The problem doesn't state that 12 is the total number of goals. What specific relationship involving 12 is mentioned?"
+        },
+        {
+          "id": "D",
+          "text": "Review the problem statement. Which specific players are being compared in the statement involving 12 goals? Is it comparing a sum to Kath, or comparing two individual players?"
+        }
+      ],
+      "screenUpdate": "The ratio of goals scored by Arjun, Simon, and Kath is 2 : 5 : 8, and Simon scored 12 more goals than Arjun"
+    },
+    {
+      "id": "C2",
+      "screen": "planning",
+      "text": "Which approach would you like to use to solve this problem?",
+      "marks": "1",
+      "lo": [
+        "ReviseMate LO"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Algebraic Approach: Set up equations using the ratio and the given condition, then solve for the variables.",
+          "path": "algebra"
+        },
+        {
+          "id": "B",
+          "text": "Numerical Approach: Find what difference in ratio units represents 12 goals, then calculate value of each ratio unit",
+          "path": "numeric"
+        },
+        {
+          "id": "C",
+          "text": "Estimation Approach: Try different values that satisfy the ratio until finding one that matches the conditions.",
+          "path": ""
+        },
+        {
+          "id": "D",
+          "text": " Fractional Approach: Convert the ratio to fractions of the total goals and solve.",
+          "path": ""
+        }
+      ],
+      "correctAnswer": [
+        "A",
+        "B"
+      ],
+      "feedback": [
+        {
+          "id": "A",
+          "text": "Good choice! The Algebraic Approach formalizes the problem using equations, which is systematic and works for a wide range of problems."
+        },
+        {
+          "id": "B",
+          "text": "Good choice! The Numerical Approach directly uses the difference between ratio units to find their value, making it efficient for this problem."
+        },
+        {
+          "id": "C",
+          "text": "Consider whether this approach would be reliable in an exam setting. Is there a more systematic method that would guarantee finding the correct answer in fewer steps?"
+        },
+        {
+          "id": "D",
+          "text": "Think about whether converting to fractions adds clarity or complexity to this problem. Is there a more direct way to use the given ratio information?"
+        }
+      ],
+      "screenUpdate": "Method Selected:"
+    },
+    {
+      "id": "C3",
+      "screen": "planning",
+      "text": "What should we check to verify that Kath scored 32 goals?",
+      "marks": "0",
+      "lo": [
+        "LO-F-1.7E"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Check only that 32 is divisible by 8",
+          "path": ""
+        },
+        {
+          "id": "B",
+          "text": "Check that Simon scored more than Arjun",
+          "path": ""
+        },
+        {
+          "id": "C",
+          "text": "Check that the ratio 2:5:8 holds AND Simon scored exactly 12 more than Arjun",
+          "path": ""
+        },
+        {
+          "id": "D",
+          "text": "Check only the total number of goals",
+          "path": ""
+        }
+      ],
+      "correctAnswer": [
+        "C"
+      ],
+      "feedback": [
+        {
+          "id": "A",
+          "text": "This only checks one aspect. What about the relationship between all three players?"
+        },
+        {
+          "id": "B",
+          "text": "We need to be more specific. How many more goals exactly?"
+        },
+        {
+          "id": "C",
+          "text": "Excellent! We need to verify both conditions from the original problem."
+        },
+        {
+          "id": "D",
+          "text": "The total wasn't given in the problem. What conditions were actually stated?"
+        }
+      ],
+      "screenUpdate": "Verification checklist: ✓ Ratio 2:5:8 maintained ✓ Simon scored 12 more than Arjun"
+    },
+    {
+      "id": "C4",
+      "screen": "planning",
+      "text": "Based on your previous calculations and knowing Kath scored 32 goals, determine Arjun's and Simon's goals.",
+      "marks": "1",
+      "lo": [
+        "LO-F-1.7D",
+        "LO-F-1.1E"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Arjun: 8, Simon: 20",
+          "path": ""
+        },
+        {
+          "id": "B",
+          "text": "Arjun: 4, Simon: 10",
+          "path": ""
+        },
+        {
+          "id": "C",
+          "text": "Arjun: 2, Simon: 5",
+          "path": ""
+        },
+        {
+          "id": "D",
+          "text": "Arjun: 16, Simon: 40",
+          "path": ""
+        }
+      ],
+      "correctAnswer": [
+        "A"
+      ],
+      "feedback": [
+        {
+          "id": "A",
+          "text": "Perfect! Using the ratio 2:5:8 and your scaling factor: Arjun = 2×4 = 8 goals, Simon = 5×4 = 20 goals."
+        },
+        {
+          "id": "B",
+          "text": "Remember to multiply the ratio parts by the scaling factor you found."
+        },
+        {
+          "id": "C",
+          "text": "These are the ratio values, not the actual goals."
+        },
+        {
+          "id": "D",
+          "text": "Check your calculation using the scaling factor from your solution."
+        }
+      ],
+      "screenUpdate": "Calculated values: Arjun = 8, Simon = 20, Kath = 32"
+    },
+    {
+      "id": "C5",
+      "screen": "planning",
+      "text": "Do the goals 8:20:32 maintain the ratio 2:5:8?",
+      "marks": "0",
+      "lo": [
+        "LO-F-1.7A"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Yes, because 8:20:32 = 2:5:8 when divided by 4",
+          "path": ""
+        },
+        {
+          "id": "B",
+          "text": "No, the numbers are different",
+          "path": ""
+        },
+        {
+          "id": "C",
+          "text": "Yes, because 8+20+32 = 60",
+          "path": ""
+        },
+        {
+          "id": "D",
+          "text": "Cannot determine",
+          "path": ""
+        }
+      ],
+      "correctAnswer": [
+        "A"
+      ],
+      "feedback": [
+        {
+          "id": "A",
+          "text": "Correct! 8÷4 = 2, 20÷4 = 5, 32÷4 = 8, maintaining the ratio perfectly."
+        },
+        {
+          "id": "B",
+          "text": "Ratios can be scaled. Check if 8:20:32 is proportional to 2:5:8."
+        },
+        {
+          "id": "C",
+          "text": "The sum doesn't verify the ratio. How can we check proportionality?"
+        },
+        {
+          "id": "D",
+          "text": "We have all the information needed. Divide each value by the same number."
+        }
+      ],
+      "screenUpdate": "✓ Ratio verified: 8:20:32 = 2:5:8"
+    },
+    {
+      "id": "C6",
+      "screen": "planning",
+      "text": "Does Simon's 20 goals represent 12 more than Arjun's 8 goals?",
+      "marks": "0",
+      "lo": [
+        "LO-F-1.1E"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Yes, because 20 - 8 = 12",
+          "path": ""
+        },
+        {
+          "id": "B",
+          "text": "No, because 20 - 8 = 8",
+          "path": ""
+        },
+        {
+          "id": "C",
+          "text": "Yes, because 20 > 8",
+          "path": ""
+        },
+        {
+          "id": "D",
+          "text": "No, because 12 + 8 = 20",
+          "path": ""
+        }
+      ],
+      "correctAnswer": [
+        "A"
+      ],
+      "feedback": [
+        {
+          "id": "A",
+          "text": "Excellent! 20 - 8 = 12, exactly as required. Verification Complete: ✓ Goals are in ratio 2:5:8 (8:20:32) ✓ Simon (20) scored exactly 12 more than Arjun (8) Therefore, our answer of 32 goals for Kath is correct!"
+        },
+        {
+          "id": "B",
+          "text": "Recalculate: what is 20 minus 8?"
+        },
+        {
+          "id": "C",
+          "text": "We need the exact difference, not just that Simon scored more."
+        },
+        {
+          "id": "D",
+          "text": "This shows addition, but we need to verify the difference."
+        }
+      ],
+      "screenUpdate": "✓ Difference verified: Simon (20) - Arjun (8) = 12"
+    }
+  ],
+  "pathQuestions": [
+    {
+      "id": "algebra",
+      "questions": [
+        {
+          "id": "Q1",
+          "screen": "planning",
+          "text": "The goals ratio is 2:5:8. What does this ratio mean in terms of goals scored by Arjun, Simon, and Kath?",
+          "marks": "0",
+          "lo": [
+            "LO-F-1.7A"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": " For every 2 goals Arjun scores, Simon scores 5, and Kath scores 8."
+            },
+            {
+              "id": "B",
+              "text": " Arjun scored 2 goals, Simon 5, Kath 8."
+            },
+            {
+              "id": "C",
+              "text": " Arjun scored 2 more than Simon, Kath scored 8 more than Simon."
+            },
+            {
+              "id": "D",
+              "text": "The ratio shows the order of who scored most."
+            }
+          ],
+          "correctAnswer": [
+            "A"
+          ],
+          "feedback": [
+            {
+              "id": "A",
+              "text": "Perfect! Ratios compare parts multiplicatively. This means their actual goals are in proportion to these numbers."
+            },
+            {
+              "id": "B",
+              "text": " Consider what a ratio actually represents. Does 2:5:8 necessarily mean the exact numbers of goals scored, or does it show a relationship between the values?"
+            },
+            {
+              "id": "C",
+              "text": " Think about how ratios work. Do ratios express additive differences between values, or do they express a different type of relationship?"
+            },
+            {
+              "id": "D",
+              "text": " While the ratio does show a ranking, that's only part of what it tells us. What specific relationship between the three players' goals does the ratio 2:5:8 express?"
+            }
+          ],
+          "screenUpdate": "For every 2 goals Arjun scores, Simon scores 5, and Kath scores 8."
+        },
+        {
+          "id": "Q2",
+          "screen": "planning",
+          "text": "How can we represent their goals algebraically?",
+          "marks": "0",
+          "lo": [
+            "LO-F-2.4B",
+            "LO-F-1.7E"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": " Arjun = 2x, Simon = 5x, Kath = 8x."
+            },
+            {
+              "id": "B",
+              "text": " Arjun = 2, Simon = 5, Kath = 8."
+            },
+            {
+              "id": "C",
+              "text": " Arjun = x + 2, Simon = x + 5, Kath = x + 8."
+            },
+            {
+              "id": "D",
+              "text": "Arjun = 2/x, Simon = 5/x, Kath = 8/x."
+            }
+          ],
+          "correctAnswer": [
+            "A"
+          ],
+          "feedback": [
+            {
+              "id": "A",
+              "text": "Correct (: Great job! Using a variable x to represent the scaling factor allows us to work with the ratio proportionally."
+            },
+            {
+              "id": "B",
+              "text": " Think about how to use algebra to represent unknown quantities. These are just the ratio values, but what do we need to find the actual goals?"
+            },
+            {
+              "id": "C",
+              "text": " Consider how ratios work mathematically. Does a ratio represent an additive relationship (adding a constant) or a multiplicative relationship (multiplying by a factor)?"
+            },
+            {
+              "id": "D",
+              "text": " Look carefully at how variables should be used to represent ratio relationships. Should the ratio values be divided by x, or should x be multiplied by the ratio values?"
+            }
+          ],
+          "screenUpdate": "Arjun = 2x, Simon = 5x, Kath = 8x."
+        },
+        {
+          "id": "Q3",
+          "screen": "planning",
+          "text": "Simon scored 12 more goals than Arjun. How can we represent this difference in plain English first?",
+          "marks": "0",
+          "lo": [
+            "LO-F-2.4A",
+            "LO-F-1.1E "
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": " Simon's goals - Arjun's goals = 12."
+            },
+            {
+              "id": "B",
+              "text": " Simon's goals + Arjun's goals = 12."
+            },
+            {
+              "id": "C",
+              "text": " Arjun's goals - Simon's goals = 12."
+            },
+            {
+              "id": "D",
+              "text": "Simon's goals = 12 x Arjun's goals."
+            }
+          ],
+          "correctAnswer": [
+            "A"
+          ],
+          "feedback": [
+            {
+              "id": "A",
+              "text": "Exactly! This clearly states the relationship between Simon's and Arjun's goals."
+            },
+            {
+              "id": "B",
+              "text": "Review the problem statement carefully. When we say 'Simon scored 12 more goals than Arjun,' what mathematical operation does this suggest?"
+            },
+            {
+              "id": "C",
+              "text": "Think about the direction of the comparison. If Simon scored more than Arjun, which player's value should come first in the subtraction?"
+            },
+            {
+              "id": "D",
+              "text": " Consider the meaning of 'more than' in this context. Does it indicate multiplication, or does it refer to a different mathematical operation?"
+            }
+          ],
+          "screenUpdate": "Simon's goals - Arjun's goals = 12."
+        },
+        {
+          "id": "Q4",
+          "screen": "planning",
+          "text": "Simon scored 12 more goals than Arjun. How can we represent this difference?",
+          "marks": "0",
+          "lo": [
+            "LO-F-2.4B",
+            "LO-F-1.7E"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": " 5x - 2x = 12."
+            },
+            {
+              "id": "B",
+              "text": " 5x + 2x = 12."
+            },
+            {
+              "id": "C",
+              "text": " 2x - 5x = 12."
+            },
+            {
+              "id": "D",
+              "text": "5x = 12 - 2x."
+            }
+          ],
+          "correctAnswer": [
+            "A"
+          ],
+          "feedback": [
+            {
+              "id": "A",
+              "text": " Well done! Substituting our algebraic expressions gives: 5x - 2x = 12."
+            },
+            {
+              "id": "B",
+              "text": " Simon scored more than Arjun, so we need to subtract Arjun's goals (2x) from Simon's goals (5x). Which operation represents 'more than'?"
+            },
+            {
+              "id": "C",
+              "text": " Consider the direction of the subtraction. If Simon scored more than Arjun, should Simon's value be subtracted from Arjun's, or the other way around?"
+            },
+            {
+              "id": "D",
+              "text": " While this equation is algebraically equivalent to the correct one, think about which form most clearly represents the given condition that Simon scored 12 more goals than Arjun."
+            }
+          ],
+          "planningscreenUpdate": "Form the equation: 5x - 2x = 12 → [M1 earned for forming the equation]"
+        },
+        {
+          "id": "Q5",
+          "screen": "answer",
+          "text": "Simplify and solve 5x - 2x = 12.",
+          "marks": "0",
+          "lo": [
+            "LO-F-2.4A",
+            "LO-F-1.1E"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": " 3x = 12, so x = 4."
+            },
+            {
+              "id": "B",
+              "text": " 7x = 12, so x = 12/7."
+            },
+            {
+              "id": "C",
+              "text": " 3x = 0, so x = 0."
+            },
+            {
+              "id": "D",
+              "text": "5x = 12 + 2x, so x = 6."
+            }
+          ],
+          "correctAnswer": [
+            "A"
+          ],
+          "feedback": [
+            {
+              "id": "A",
+              "text": " Perfect! Combine like terms: 5x - 2x = 3x, then divide both sides by 3: x = 4."
+            },
+            {
+              "id": "B",
+              "text": " When combining like terms, we need to be careful with signs. Does 5x - 2x equal 7x or 3x?"
+            },
+            {
+              "id": "C",
+              "text": " Look carefully at the equation. We have 3x = 12, not 3x = 0. How do we solve for x when 3x = 12?"
+            },
+            {
+              "id": "D",
+              "text": " Your rearrangement is correct (5x = 12 + 2x), but check your calculation when solving for x. If 3x = 12, what is the value of x?"
+            }
+          ],
+          "screenUpdate": "Simplify and solve: 3x = 12, so x = 4. → [No additional mark - necessary step in solution process]"
+        },
+        {
+          "id": "Q6",
+          "screen": "answer",
+          "text": "Using x=4, calculate Kath's goals.",
+          "marks": "1",
+          "lo": [
+            "LO-F-1.7B",
+            "LO-F-1.7D",
+            "LO-F-1.1E"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": " Kath's Goals = 8x4=32."
+            },
+            {
+              "id": "B",
+              "text": " Kath's Goals = 8+4=12."
+            },
+            {
+              "id": "C",
+              "text": " Kath's Goals = 8x4=24."
+            },
+            {
+              "id": "D",
+              "text": "Kath's Goals = 8÷4=2."
+            }
+          ],
+          "correctAnswer": [
+            "A"
+          ],
+          "feedback": [
+            {
+              "id": "A",
+              "text": " Perfect! Kath's goals = 8x4=32."
+            },
+            {
+              "id": "B",
+              "text": " Remember that we're working with a ratio where each part is multiplied by x. Should we add or multiply to find Kath's goals?"
+            },
+            {
+              "id": "C",
+              "text": " Check your multiplication. What is 8 multiplied by 4?"
+            },
+            {
+              "id": "D",
+              "text": " Consider our algebraic representation. Kath's goals = 8x means we multiply 8 by x, not divide 8 by x."
+            }
+          ],
+          "screenUpdate": "Kath scored 8x4=32 goals → [M1 earned for complete method] → [A1 earned for correct answer]"
+        }
+      ]
+    },
+    {
+      "id": "numeric",
+      "questions": [
+        {
+          "id": "Q1",
+          "screen": "planning",
+          "text": "Simon has 5 parts, and Arjun has 2 parts. How many more parts does Simon have than Arjun?",
+          "marks": "0",
+          "lo": [
+            "LO-F-1.7A",
+            "LO-F-1.7E"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": " 3 parts."
+            },
+            {
+              "id": "B",
+              "text": " 2 parts."
+            },
+            {
+              "id": "C",
+              "text": " 5 parts."
+            },
+            {
+              "id": "D",
+              "text": "8 parts."
+            }
+          ],
+          "correctAnswer": [
+            "A"
+          ],
+          "feedback": [
+            {
+              "id": "A",
+              "text": " Great job! Simon has 5-2=3 more parts than Arjun."
+            },
+            {
+              "id": "B",
+              "text": " To find the difference between Simon's and Arjun's parts, what calculation do we need to perform? Is it 5-2 or something else?"
+            },
+            {
+              "id": "C",
+              "text": " This gives Simon's parts only. To find how many more parts Simon has than Arjun, what calculation do we need to perform?"
+            },
+            {
+              "id": "D",
+              "text": " This is Kath's number of parts, not the difference between Simon's and Arjun's parts. What calculation would give us the difference?"
+            }
+          ],
+          "planningscreenUpdate": "Simon has 3 more parts than Arjun."
+        },
+        {
+          "id": "Q2",
+          "screen": "answer",
+          "text": "Simon scored 12 more goals than Arjun. If Simon has 3 more parts, how many goals does one part represent?",
+          "marks": "0",
+          "lo": [
+            "LO-F-1.7C",
+            "LO-F-1.7D",
+            "LO-F-1.1E"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": " 4 goals."
+            },
+            {
+              "id": "B",
+              "text": " 3 goals."
+            },
+            {
+              "id": "C",
+              "text": " 6 goals."
+            },
+            {
+              "id": "D",
+              "text": "12 goals."
+            }
+          ],
+          "correctAnswer": [
+            "A"
+          ],
+          "feedback": [
+            {
+              "id": "A",
+              "text": " Each part = 12 ÷ 3 = 4 goals. Ratios scale multiplicatively: 1 part = 4 goals."
+            },
+            {
+              "id": "B",
+              "text": " If Simon has 3 more parts than Arjun, and this represents 12 more goals, how many goals does each part represent? Check your division."
+            },
+            {
+              "id": "C",
+              "text": " Consider the calculation needed. If 3 parts represent 12 goals, how many goals does 1 part represent? Is it 12 ÷ 3 or another calculation?"
+            },
+            {
+              "id": "D",
+              "text": " This assumes all 12 goals correspond to 1 part, but we know they correspond to 3 parts. How many goals would 1 part represent?"
+            }
+          ],
+          "screenUpdate": "Each part represents 4 goals "
+        },
+        {
+          "id": "Q3",
+          "screen": "answer",
+          "text": "Kath has 8 parts. How many goals did Kath score?",
+          "marks": "1",
+          "lo": [
+            "LO-F-1.7B",
+            "LO-F-1.7D",
+            "LO-F-1.1E"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": " 8 x 4 = 32 goals."
+            },
+            {
+              "id": "B",
+              "text": " 6 x 4 = 24 goals."
+            },
+            {
+              "id": "C",
+              "text": " 10 x 4 = 40 goals."
+            },
+            {
+              "id": "D",
+              "text": "4 x 4 = 16 goals."
+            }
+          ],
+          "correctAnswer": [
+            "A"
+          ],
+          "feedback": [
+            {
+              "id": "A",
+              "text": " Perfect! Kath's goals = 8x4=32."
+            },
+            {
+              "id": "B",
+              "text": " Check the ratio again. How many parts does Kath have in the 2:5:8 ratio?"
+            },
+            {
+              "id": "C",
+              "text": " Review the ratio given in the problem. How many parts does Kath have in the 2:5:8 ratio?"
+            },
+            {
+              "id": "D",
+              "text": " Look at the ratio again. Does Kath have 4 parts in the 2:5:8 ratio?"
+            }
+          ],
+          "screenUpdate": "Kath scored 8x4=32 goals → [M1 earned for complete method] → [A1 earned for correct answer]"
+        }
+      ]
+    }
+  ]
+}
