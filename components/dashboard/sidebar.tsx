@@ -17,7 +17,7 @@ export function Sidebar() {
   const pathname = usePathname()
 
   return (
-    <aside className="sticky top-4 left-4 rounded-lg flex h-screen w-[104px] shrink-0 flex-col items-center border-r border-bone  py-6 bg-[#F2EDEC]">
+    <aside className="sticky top-4 bottom-4 left-4 rounded-lg flex h-screen w-[104px] shrink-0 flex-col items-center border-r border-bone  py-6 bg-[#F2EDEC]">
       <Link href="/dashboard" className="mb-8">
         <Image
           src="/dashboard/dashboard_logo.png"
@@ -34,7 +34,7 @@ export function Sidebar() {
           return (
             <Link
               key={href}
-              href={href}
+              href="/dashboard"
               aria-label={label}
               className={cn(
                 "flex size-13 items-center justify-center rounded-full transition-all duration-200",
@@ -48,7 +48,7 @@ export function Sidebar() {
           )
         })}
          <Link
-        href="/dashboard/settings"
+        href="/dashboard"
         aria-label="Settings"
         className={cn(
           "flex size-11 items-center justify-center rounded-xl transition-all duration-200",

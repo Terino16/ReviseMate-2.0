@@ -14,12 +14,12 @@ import { MateQuizCard } from "@/components/dashboard/mate-quiz-card"
 import Image from "next/image"
 
 const TOPICS = [
-  { number: 1, title: "Numbers and the number system", subtopicCount: 11, progress: 90 },
-  { number: 2, title: "Numbers and the number system", subtopicCount: 11, progress: 90 },
-  { number: 3, title: "Numbers and the number system", subtopicCount: 11, progress: 90 },
-  { number: 4, title: "Numbers and the number system" },
-  { number: 5, title: "Numbers and the number system" },
-  { number: 6, title: "Numbers and the number system" },
+  { number: 1, title: "Numbers and the number system", subtopicCount: 11, },
+  { number: 2, title: "Alegbra", subtopicCount: 11,  },
+  { number: 3, title: "Units and Measurement", subtopicCount: 11,  },
+  { number: 4, title: "Geography of Earth",subtopicCount: 12 },
+  { number: 5, title: "Maths paper IGCSE",subtopicCount: 13 },
+  { number: 6, title: "Maths paper IBDP",subtopicCount: 14 },
 ]
 
 export default function DashboardPage() {
@@ -66,9 +66,9 @@ export default function DashboardPage() {
         </div>
 
         <div className="bg-[#F2EDEC] w-full p-8 flex flex-col space-y-3 items-left rounded-xl relative">
-          <p className="font-serif text-3xl">Numbers and the Number System</p>
+          <p className="font-serif text-3xl">Try IGCSE Maths Question Paper</p>
           <p className="text-sm max-w-xs text-bodytext">
-            Try a guided practice on Ratio &amp; Proportion to see how ReviseMate works
+            Try a guided practice on IGCSE Maths Question Paper to see how ReviseMate works
           </p>
           <Link href="/dashboard/quiz/ED_Igcse_Math_A_Q1">
             <Button variant="purple" className="w-fit mt-1">
@@ -98,8 +98,6 @@ export default function DashboardPage() {
               number={topic.number}
               title={topic.title}
               subtopicCount={topic.subtopicCount}
-              progress={topic.progress}
-              locked={!topic.progress}
               className="bg-[#F2EDEC]"
             />
           ))}
